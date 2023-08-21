@@ -1,0 +1,83 @@
+  main()
+  {
+  add();//Function call
+  add();
+  isEven(); // Function call
+  }
+  add() // Function def
+  {
+    int a,b,c;
+    printf("Enter any two numbers:");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    printf("Sum is %d:",c);
+}
+isEven()//Function def 
+{  int a;
+   printf("Enter any number:");
+    if(a%2==0)
+     printf("Its even:");
+     else
+     printf("Its odd:");
+
+}
+
+//Takes nothing, returns nothing;
+ main()
+ {  void add(void);// Function declaration
+    add(); 
+ }
+ void add()// Takes nothing
+ {
+    int a,b,c;
+    printf("Enter any two numbers:");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    printf("Sum is %d",c);
+ }
+
+ // Takes something, returns nothing
+  void add( int , int );// Global declaration
+  void main()
+ {  int x,y; 
+    void add(int, int);// Local declaration
+    printf("Enter any two numbers:");
+    scanf("%d%d",&x,&y);
+    add(x,y);// Actual arguements : call by value 
+ }
+ void add(int a, int b)// Formal arguements
+ {
+    int c;
+    c=a+b;
+    printf("Sum is %d",c);
+ }
+// Takes nothing, returns something
+ int add(void);
+ void main()
+ {  int s;
+    s=add();
+    printf("Sum is %d",s);
+ }
+ int add()
+ {
+    int a,b,c;
+    printf("Enter two numbers:");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    return(c);
+ }
+ // Takes somethig, returns something
+  int add(int,int);
+ void main()
+ {  int s,x,y;
+    printf("Enter any two numbers:");
+    scanf("%d%d",&x,&y);
+    s=add(x,y);
+    printf("Sum is %d",s);
+ }
+ int add(int a, int b)
+ {
+    int c;
+    c=a+b;
+    return(c);
+ }
